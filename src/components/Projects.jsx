@@ -15,8 +15,8 @@ const Projects = () => {
       link: "https://github.com/mitantsoa1/mi-lah/",
     },
     {
-      title: "Blog & comment",
-      description: "Projet de blog avec système de commentaire",
+      title: "forums & comment",
+      description: "Projet de forum avec système de commentaire",
       technologies: ["Laravel", "MySQL", "Git"],
       link: "https://github.com/mitantsoa1/forums",
     },
