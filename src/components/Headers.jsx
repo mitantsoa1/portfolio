@@ -32,17 +32,17 @@ const Headers = () => {
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
-  useEffect(() => {
-    // Écouteur pour détecter le défilement et changer le style du header
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+  // useEffect(() => {
+  //   // Écouteur pour détecter le défilement et changer le style du header
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 50);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Clean up
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   // Clean up
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <header
