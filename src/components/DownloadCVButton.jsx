@@ -3,7 +3,7 @@ const DownloadCVButton = () => {
   return (
     <div className="flex justify-end">
       <a
-        href="/cv/cv_rakotomalala.pdf"
+        href="https://mitantsoa1.github.io/portfolio/cv/cv_rakotomalala.pdf"
         download="cv_rakotomalala.pdf"
         className="flex px-4 py-2 border-2 rounded hover:bg-gris"
       >
