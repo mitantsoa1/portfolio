@@ -10,31 +10,28 @@ const Contact = () => {
           Je suis toujours ouvert à de nouvelles opportunités et collaborations.
           N'hésitez pas à me contacter via l'un des canaux suivants :
         </p>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-row space-x-4">
           <a
-            href="mailto:your.email@example.com"
-            className="flex items-center transition-colors text-primary hover:text-secondary"
+            href="mailto:ainamitantso@gmail.com"
+            className="flex items-center transition-colors hover:text-secondary"
           >
             <Mail className="w-6 h-6 mr-2" />
-            ainamitantso@gmail.com
           </a>
           <a
             href="https://github.com/mitantsoa1"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center transition-colors text-primary hover:text-secondary"
+            className="flex items-center transition-colors hover:text-secondary"
           >
             <Github className="w-6 h-6 mr-2" />
-            GitHub Profile
           </a>
           <a
             href="https://www.linkedin.com/in/mitantsoa-rakotomalala-60a122186/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center transition-colors text-primary hover:text-secondary"
+            className="flex items-center transition-colors hover:text-secondary"
           >
             <Linkedin className="w-6 h-6 mr-2" />
-            LinkedIn Profile
           </a>
         </div>
       </div>

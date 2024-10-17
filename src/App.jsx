@@ -12,6 +12,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,9 +26,10 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer className="py-4 text-center text-primary bg-gris shadow-[0px_2px_10px_1px_#00000024]">
+      {/* <footer className="py-4 text-center text-primary bg-gris shadow-[0px_2px_10px_1px_#00000024]">
         <p>&copy; 2024 Junior Web Developer. All rights reserved.</p>
-      </footer>
+      </footer> */}
+      <Footer />
     </div>
   );
 }
