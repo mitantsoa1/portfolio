@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="min-h-screen bg-background">
       <Headers />
-      <main className="container px-24 py-8 mx-auto ">
+      <main className="container py-8 mx-auto lg:px-24 md:px-16 sm:px-8 ">
         {" "}
         {/* Added mt-16 for top margin */}
         <About />

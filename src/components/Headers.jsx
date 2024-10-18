@@ -56,14 +56,16 @@ const Headers = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 bg-dark text-light p-4 ${
         isScrolled
-          ? "bg-white bg-opacity-90 shadow-lg"
-          : "bg-gris bg-opacity-80 shadow-[0px_2px_10px_1px_#00000024]"
+          ? " bg-opacity-90 shadow-lg"
+          : " bg-opacity-80 shadow-[0px_2px_10px_1px_#00000024]"
       }`}
     >
       <div className="container flex items-center justify-between px-4 mx-auto">
-        <h1 className="text-2xl font-bold">Mitantsoa Hanja</h1>
+        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-light">
+          Mitantsoa Hanja
+        </h1>
         <nav>
           <ul className="flex space-x-10">
             {["profil", "compétences", "projets", "contact"].map((section) => (

@@ -3,16 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Poppins", "sans-serif"],
-      },
       colors: {
-        header: "#3b2af3",
-        primary: "#7367f0",
-        secondary: "#5e50ee",
-        background: "#FFF",
-        gris: "#F6F6F6",
-        hover: "#220ef7",
+        dark: "rgb(var(--color-dark) / <alpha-value>)",
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        light: "rgb(var(--color-light) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

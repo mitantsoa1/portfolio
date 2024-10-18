@@ -4,63 +4,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-dark: 16 22 58; /* #10163A */
+    --color-primary: 115 103 240; /* #7367f0 */
+    --color-light: 240 240 240; /* #F0F0F0 */
+    --color-secondary: 94 80 238; /* #5e50ee */
+  }
+}
+
 @layer components {
-    .underline-animation {
-        @apply relative inline-block; /* Assure l'alignement et la gestion de positionnement */
-    }
+  .underline-animation {
+    @apply relative inline-block;
+  }
 
-    .underline-animation::after {
-        @apply absolute content-[''] w-full h-1 left-0 top-6 bg-primary scale-x-0 transition-transform duration-300 origin-left; /* Définit l'animation */
-    }
+  .underline-animation::after {
+    @apply absolute content-[''] w-full h-1 left-0 bottom-0 bg-secondary scale-x-0 transition-transform duration-300 origin-left;
+  }
 
-    .underline-animation:hover::after {
-        @apply scale-x-100; /* Déclenche l'animation au hover */
-    }
+  .underline-animation:hover::after {
+    @apply scale-x-100;
+  }
+
+  .btn {
+    @apply px-6 py-2 font-semibold transition-all duration-300 rounded-full;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-light hover:bg-secondary;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-light;
+  }
+
+  .card {
+    @apply p-6 transition-all duration-300 bg-white rounded-lg shadow-md hover:shadow-lg;
+  }
 }
 
-:root {
-  --color-primary: #7367f0;
-  --color-secondary: #5e50ee;
-  --color-background: #F0F0F0;
-}
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  body {
+    @apply bg-light text-dark font-poppins;
+  }
 
-body {
-  background-color: var(--color-background);
-  font-family: 'Poppins', sans-serif;
-}
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-dark;
+  }
 
-.bg-primary {
-  background-color: var(--color-primary);
-}
-
-.bg-secondary {
-  background-color: var(--color-secondary);
-}
-
-.text-primary {
-  color: var(--color-primary);
-}
-
-.text-secondary {
-  color: var(--color-secondary);
-}
-
-.hover\:bg-primary:hover {
-  background-color: var(--color-primary);
-}
-
-.hover\:bg-secondary:hover {
-  background-color: var(--color-secondary);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
-
-section {
-  scroll-margin-top: 4rem;
+  section {
+    @apply scroll-mt-16;
+  }
 }
