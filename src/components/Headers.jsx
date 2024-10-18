@@ -10,7 +10,7 @@ const Headers = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3, // Ajusté pour une meilleure détection
+      threshold: 1, // Ajusté pour une meilleure détection
     };
 
     const observerCallback = (entries) => {
