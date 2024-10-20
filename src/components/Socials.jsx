@@ -3,7 +3,7 @@ import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 function Socials() {
   return (
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 text-sm">
       <span className="inline-flex items-center p-2 rounded-2xl bg-social">
         <Mail className="inline-block w-6 h-6 mr-2" />
         <span className="inline-block">ainamitantso@gmail.com</span>
