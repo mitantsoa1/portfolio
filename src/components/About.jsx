@@ -1,11 +1,12 @@
 import React from "react";
 import DownloadCVButton from "./DownloadCVButton";
+import Socials from "./Socials";
 
 const About = () => {
   return (
     <section id="profil" className="my-16">
-      <h2 className="mb-4 text-3xl font-bold text-primary">Profil</h2>
-      <div className="p-6 bg-white border-l-4 rounded-lg shadow-md border-secondary">
+      <h2 className="mb-4 text-3xl font-bold text-light">Profil</h2>
+      <div className="p-6 border-l-8 card">
         <p className="mb-4 text-lg">
           Bonjour 👋, Je suis un développeur web junior passionné par la
           technologie et l'innovation. Je suis motivé par l'envie d'apprendre en
@@ -15,33 +16,26 @@ const About = () => {
           (Symfony/Laravel), JavaScript, et les bases de données MySQL et
           PostgreSQL.
         </p>
+        <Socials />
         <DownloadCVButton />
       </div>
 
       {/* Expériences */}
       <section id="experience" className="my-16">
-        <h2 className="mb-4 text-2xl font-bold text-dark">
-          Expériences et Formations
-        </h2>
-        <div className="p-6 bg-white border-l-4 rounded-lg shadow-md border-secondary">
+        <h2 className="mb-4 text-2xl">Expériences et Formations</h2>
+        <div className="p-6 border-r-2 card">
           <ul className="space-y-4">
             <li>
               <strong>Développeur Web</strong> - SIPEM Banque <br />
-              <span className="text-sm text-primary">
-                Oct. 2021 - Juin 2024
-              </span>
+              <span className="text-sm text-border">Oct. 2021 - Juin 2024</span>
             </li>
             <li>
               <strong>Stagiaire en Informatique</strong> - CEFOR <br />
-              <span className="text-sm text-primary">
-                Mars 2021 - Oct. 2023
-              </span>
+              <span className="text-sm text-border">Mars 2021 - Oct. 2023</span>
             </li>
             <li>
               <strong>Développement Web + Stage</strong> - Nir'Info <br />
-              <span className="text-sm text-primary">
-                Nov. 2020 - Mars 2021
-              </span>
+              <span className="text-sm text-border">Nov. 2020 - Mars 2021</span>
             </li>
           </ul>
         </div>

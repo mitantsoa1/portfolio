@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <footer className="relative py-0 text-center bg-gray-200">
       <div className="footer-content">
-        <p className="pt-4 text-sm"> All rights reserved © H. Mitantsoa 2024</p>
+        <p className="pt-4 text-sm text-dark">
+          {" "}
+          All rights reserved © H. Mitantsoa 2024
+        </p>
         <p className="mt-2 text-gray-700">&nbsp;</p>
       </div>
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none footer-wave">

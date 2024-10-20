@@ -8,6 +8,9 @@ export default {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         light: "rgb(var(--color-light) / <alpha-value>)",
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        social: "#0090FF",
+        border: "#3B9EFF",
+        tech: "#00FFFF",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

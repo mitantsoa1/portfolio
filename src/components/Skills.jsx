@@ -34,33 +34,33 @@ const Skills = () => {
 
   return (
     <section id="compétences" className="my-16">
-      <h2 className="mb-4 text-3xl font-bold text-primary">Compétences</h2>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+      <h2 className="mb-4 text-3xl font-bold text-light">Compétences</h2>
+      <div className="grid grid-cols-2 gap-4 border-l-8 md:grid-cols-3 card">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col p-5 mb-5 bg-white border-l-4 rounded-lg shadow-md border-secondary"
+            className="flex flex-col p-5 mb-5 border-l-4 rounded-lg shadow-md bg-secondary border-border"
           >
             <div className="flex items-center">
-              <span className="text-primary">{skill.icon}</span>
+              <span className="text-light">{skill.icon}</span>
               <span className="ml-2">{skill.name}</span>
             </div>
             {skill.subskills ? (
               skill.subskills.map((subskill, subIndex) => (
                 <div key={subIndex} className="mt-2">
                   <span className="text-sm font-semibold">{subskill.name}</span>
-                  <div className="w-full h-2 mt-1 bg-gray-300 rounded">
+                  <div className="w-full h-2 mt-1 rounded bg-light">
                     <div
-                      className="h-full transition-all duration-300 rounded bg-primary"
+                      className="h-full transition-all duration-300 rounded bg-border"
                       style={{ width: `${subskill.level}%` }}
                     ></div>
                   </div>
                 </div>
               ))
             ) : (
-              <div className="w-full h-2 mt-2 bg-gray-300 rounded">
+              <div className="w-full h-2 mt-2 rounded bg-light">
                 <div
-                  className="h-full transition-all duration-300 rounded bg-primary"
+                  className="h-full transition-all duration-300 rounded bg-border"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>

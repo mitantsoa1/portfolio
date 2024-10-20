@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    --color-dark: 16 22 58; /* #10163A */
-    --color-primary: 115 103 240; /* #7367f0 */
+    --color-dark: 13 40 71; 
+    --color-primary: 13 40 71; 
     --color-light: 240 240 240; /* #F0F0F0 */
-    --color-secondary: 94 80 238; /* #5e50ee */
+    --color-secondary: 16 77 135; 
   }
 }
 
@@ -19,7 +19,7 @@
   }
 
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-1 left-0 bottom-0 bg-secondary scale-x-0 transition-transform duration-300 origin-left;
+    @apply absolute content-[''] w-full h-1 left-0 bottom-0 bg-light scale-x-0 transition-transform duration-300 origin-left;
   }
 
   .underline-animation:hover::after {
@@ -39,8 +39,9 @@
   }
 
   .card {
-    @apply p-6 transition-all duration-300 bg-white rounded-lg shadow-md hover:shadow-lg;
+    @apply p-6 transition-all duration-300 rounded-lg shadow-md bg-dark border-y-2 border-border hover:shadow-lg;
   }
+  
 }
 
 @layer utilities {
@@ -49,11 +50,11 @@
   }
 
   body {
-    @apply bg-light text-dark font-poppins;
+    @apply bg-dark text-light font-poppins;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-dark;
+    @apply font-semibold text-light;
   }
 
   section {

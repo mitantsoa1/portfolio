@@ -59,7 +59,7 @@ const Headers = () => {
       className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 bg-dark text-light p-4 ${
         isScrolled
           ? " bg-opacity-90 shadow-lg"
-          : " bg-opacity-80 shadow-[0px_2px_10px_1px_#00000024]"
+          : " bg-opacity-80 shadow-[-1px_3px_13px_10px_#1a202c]"
       }`}
     >
       <div className="container flex items-center justify-between px-4 mx-auto">
@@ -74,7 +74,7 @@ const Headers = () => {
                   href={`#${section}`}
                   onClick={() => handleLinkClick(section)}
                   className={`relative hover:text-hover transition-colors ${
-                    activeSection === section ? "text-secondary" : ""
+                    activeSection === section ? "text-light/60 font-bold" : ""
                   } underline-animation`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
