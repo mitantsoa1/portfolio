@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Sun, Moon } from "lucide-react"; // Assurez-vous d'avoir ces icônes
 
-const Headers = () => {
-  const [activeSection, setActiveSection] = useState("");
+const Headers = ({ darkMode, toggleDarkMode }) => {
+  const [activeSection, setActiveSection] = useState("profil");
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [manuallySelected, setManuallySelected] = useState(false); // Gérer les sélections manuelles
 
@@ -56,14 +58,14 @@ const Headers = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 bg-dark text-light p-4 ${
+      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 bg-background text-text p-4 ${
         isScrolled
           ? " bg-opacity-90 shadow-lg"
           : " bg-opacity-80 shadow-[-1px_3px_13px_10px_#1a202c]"
       }`}
     >
       <div className="container flex items-center justify-between px-4 mx-auto">
-        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-light">
+        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-text">
           Mitantsoa Hanja
         </h1>
         <nav>
@@ -74,7 +76,9 @@ const Headers = () => {
                   href={`#${section}`}
                   onClick={() => handleLinkClick(section)}
                   className={`relative hover:text-hover transition-colors ${
-                    activeSection === section ? "text-light/60 font-bold" : ""
+                    activeSection === section
+                      ? "text-primary font-bold"
+                      : "text-text"
                   } underline-animation`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -83,6 +87,15 @@ const Headers = () => {
             ))}
           </ul>
         </nav>
+        <button
+          onClick={toggleDarkMode}
+          className="p-2 transition-colors duration-300 rounded-full border-text border-2  text-text hover:bg-secondary"
+          aria-label={
+            darkMode ? "Activer le mode clair" : "Activer le mode sombre"
+          }
+        >
+          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
       </div>
     </header>
   );

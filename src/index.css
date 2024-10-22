@@ -10,6 +10,31 @@
     --color-primary: 13 40 71; 
     --color-light: 240 240 240; /* #F0F0F0 */
     --color-secondary: 16 77 135; 
+    
+    /* Nouvelles variables pour le mode clair */
+    --color-background: 240 240 240;
+    --color-text: 13 40 71;
+    --color-card-bg: 255 255 255;
+    --color-border: 13 40 71; /* ou la couleur que vous souhaitez */
+    --color-social: 00 144 255;
+    --color-ternary: 200 200 200;
+    --color-tech: 13 40 71;
+    --color-contact: 00 118  255;
+  }
+
+  .dark {
+    /* Variables pour le mode sombre */
+    --color-background: 13 40 71;
+    --color-text: 240 240 240;
+    --color-primary: 240 240 240;
+    /* --color-card-bg: 16 77 135; */
+    --color-card-bg: 13 40 71;
+    --color-border: 59 158 255; /* ou une couleur différente pour le mode sombre si nécessaire */
+    --color-social: 00 144 255;
+    --color-secondary: 194 230 255;
+    --color-ternary: 16 77 135;
+    --color-tech: 00 255 255;
+    --color-contact: 00 118  255;
   }
 }
 
@@ -19,7 +44,7 @@
   }
 
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-1 left-0 bottom-0 bg-light scale-x-0 transition-transform duration-300 origin-left;
+    @apply absolute content-[''] w-full h-1 left-0 bottom-0 bg-text scale-x-0 transition-transform duration-300 origin-left;
   }
 
   .underline-animation:hover::after {
@@ -39,9 +64,14 @@
   }
 
   .card {
-    @apply p-6 transition-all duration-300 rounded-lg shadow-md bg-dark border-y-2 border-border hover:shadow-lg;
+    @apply p-6 transition-all duration-300 rounded-lg shadow-md border-y-2 bg-card-bg hover:shadow-lg border-border;
   }
-  
+
+  .effect-3d {
+    @apply border p-1 rounded-md shadow-sm transition-all duration-300;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.3s ease;
+  }
 }
 
 @layer utilities {
@@ -50,11 +80,11 @@
   }
 
   body {
-    @apply bg-dark text-light font-poppins;
+    @apply bg-background text-text font-poppins;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-light;
+    @apply font-semibold text-text;
   }
 
   section {

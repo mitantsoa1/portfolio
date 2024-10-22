@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Github,
   Linkedin,
@@ -15,20 +15,32 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check for user's preference in localStorage
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle("dark");
+    localStorage.setItem("darkMode", !darkMode);
+  };
+
   return (
-    <div className="min-h-screen bg-background">
-      <Headers />
-      <main className="container py-8 mx-auto lg:px-24 md:px-16 sm:px-8 ">
-        {" "}
-        {/* Added mt-16 for top margin */}
+    <div className="min-h-screen transition-colors duration-300 bg-background text-text">
+      <Headers darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <main className="container py-8 mx-auto lg:px-24 md:px-16 sm:px-8">
         <About />
         <Skills />
         <Projects />
         <Contact />
       </main>
-      {/* <footer className="py-4 text-center text-primary bg-gris shadow-[0px_2px_10px_1px_#00000024]">
-        <p>&copy; 2024 Junior Web Developer. All rights reserved.</p>
-      </footer> */}
       <Footer />
     </div>
   );

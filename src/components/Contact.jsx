@@ -5,7 +5,7 @@ import Skype from "/images/skype.png";
 const Contact = () => {
   return (
     <section id="contact" className="my-16">
-      <h3 className="mb-4 text-3xl font-bold text-light">Contact</h3>
+      <h3 className="mb-4 text-3xl font-bold text-text">Contact</h3>
       <div className="p-6 border-r-8 card">
         <p className="mb-4 text-lg">
           N'hésitez pas à me contacter par email ou via mes réseaux sociaux
@@ -17,7 +17,7 @@ const Contact = () => {
             href="tel:+261346211520"
             data-position="top"
             data-tooltip="Appeler Hanja"
-            className="inline-block p-4 mr-4 rounded-full bg-border hover:bg-social btn-floating btn-large waves-effect waves-social "
+            className="inline-block p-4 mr-4 text-white rounded-full bg-contact hover:bg-social btn-floating btn-large waves-effect waves-social "
           >
             <Phone className="w-6 h-6" />
           </a>
@@ -37,7 +37,7 @@ const Contact = () => {
             href="mailto:ainamitantso@gmail.com"
             data-position="top"
             data-tooltip="Email Aina"
-            className="inline-block p-4 mr-4 rounded-full bg-border btn-floating btn-large waves-effect waves-social hover:bg-social"
+            className="inline-block p-4 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
           >
             <Mail className="w-6 h-6" />
           </a>
@@ -59,7 +59,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             data-position="top"
             data-tooltip="Regarder Hanja sur GitHub"
-            className="inline-block p-4 mr-4 rounded-full bg-border btn-floating btn-large waves-effect waves-social hover:bg-social"
+            className="inline-block p-4 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
           >
             <Github className="w-6 h-6" />
           </a>
@@ -83,7 +83,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             data-position="top"
             data-tooltip="Regarder Hanja sur LinkedIn"
-            className="inline-block p-4 mr-4 rounded-full bg-border btn-floating btn-large waves-effect waves-social hover:bg-social"
+            className="inline-block p-4 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
           >
             <Linkedin className="w-6 h-6" />
           </a>
@@ -106,7 +106,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             data-position="top"
             data-tooltip="Appeler Hanja sur Skype"
-            className="inline-block p-2 mr-4 rounded-full bg-border btn-floating btn-large waves-effect waves-social hover:bg-social"
+            className="inline-block p-2 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
           >
             <img
               src="/portfolio/images/skype.png"
