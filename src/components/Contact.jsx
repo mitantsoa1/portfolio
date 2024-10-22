@@ -50,30 +50,6 @@ const Contact = () => {
           </a>
         </p>
 
-        {/* GitHub Hanja */}
-        <p className="flex items-center mb-4">
-          <a
-            aria-label="Regarder Hanja sur GitHub"
-            href="https://github.com/mitantsoa1"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-position="top"
-            data-tooltip="Regarder Hanja sur GitHub"
-            className="inline-block p-4 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
-          >
-            <Github className="w-6 h-6" />
-          </a>
-          <a
-            aria-label="Regarder Hanja sur GitHub"
-            href="https://github.com/mitantsoa1"
-            className="text-lg font-semibold hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/mitantsoa1
-          </a>
-        </p>
-
         {/* LinkedIn Hanja */}
         <p className="flex items-center mb-4">
           <a
@@ -94,9 +70,10 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin.com/in/mitantsoa-rakotomalala-60a122186
+            Mitantsoa Rakotomalala
           </a>
         </p>
+
         {/* skype Hanja */}
         <p className="flex items-center mb-4">
           <a
@@ -121,7 +98,31 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Appeler sur Skype
+            Aina Mitantsoa
+          </a>
+        </p>
+
+        {/* GitHub Hanja */}
+        <p className="flex items-center mb-4">
+          <a
+            aria-label="Regarder Hanja sur GitHub"
+            href="https://github.com/mitantsoa1"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-position="top"
+            data-tooltip="Regarder Hanja sur GitHub"
+            className="inline-block p-4 mr-4 text-white rounded-full bg-contact btn-floating btn-large waves-effect waves-social hover:bg-social"
+          >
+            <Github className="w-6 h-6" />
+          </a>
+          <a
+            aria-label="Regarder Hanja sur GitHub"
+            href="https://github.com/mitantsoa1"
+            className="text-lg font-semibold hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            mitantsoa1
           </a>
         </p>
       </div>

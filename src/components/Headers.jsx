@@ -65,11 +65,11 @@ const Headers = ({ darkMode, toggleDarkMode }) => {
       }`}
     >
       <div className="container flex items-center justify-between px-4 mx-auto">
-        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-text">
-          Mitantsoa Hanja
+        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-text w-1/3">
+          {isScrolled ? "Hanja" : "Mitantsoa Hanja"}
         </h1>
         <nav>
-          <ul className="flex space-x-10">
+          <ul className={`flex space-x-10 ${isScrolled ? " " : " "}`}>
             {["profil", "compétences", "projets", "contact"].map((section) => (
               <li key={section}>
                 <a
