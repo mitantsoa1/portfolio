@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="my-16">
       <h3 className="mb-4 text-3xl font-bold text-text">Contact</h3>
       <div className="p-6 border-r-8 card">
-        <p className="mb-4 text-lg">
+        <p className="mb-4 lg:text-lg md:text-lg sm:text-sm">
           N'hésitez pas à me contacter par email ou via mes réseaux sociaux
         </p>
         {/* Appeler Hanja */}
