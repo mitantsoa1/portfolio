@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="min-h-screen transition-colors duration-300 bg-background text-text ">
       <Headers darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="container py-8 mx-auto lg:px-24 md:px-16 sm:px-8 xsm:px-2  ">
+      <main className="container py-8 mx-auto px-1 lg:px-24 md:px-16 sm:px-8   ">
         <About />
         <Skills />
         <Projects />

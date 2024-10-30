@@ -12,7 +12,7 @@ const Skills = () => {
       ],
     },
     {
-      name: "JavaScript",
+      name: "JS",
       icon: <FileCode2 className="w-6 h-6" />,
       subskills: [
         { name: "React.js", level: 40 },
