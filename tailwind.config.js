@@ -30,6 +30,12 @@ export default {
       borderColor: (theme) => ({
         ...theme("colors"),
       }),
+      screens: {
+        xsm: "440px",
+      },
+      // screens: {
+      //   "2xsm": "280px",
+      // },
     },
   },
   plugins: [],
