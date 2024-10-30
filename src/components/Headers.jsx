@@ -53,7 +53,7 @@ const Headers = ({ darkMode, toggleDarkMode }) => {
           : "bg-opacity-80 shadow-[-1px_3px_13px_10px_#1a202c]"
       }`}
     >
-      <div className="container flex items-center justify-between px-4 mx-auto">
+      <div className="container flex items-center justify-between px-1 lg:px-4 md:px-4  mx-auto">
         <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-text w-1/3">
           {isScrolled ? "Hanja" : "Mitantsoa Hanja"}
         </h1>

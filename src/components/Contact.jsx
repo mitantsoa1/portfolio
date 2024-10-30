@@ -44,7 +44,7 @@ const Contact = () => {
           <a
             aria-label="Email Hanja"
             href="mailto:ainamitantso@gmail.com"
-            className="text-lg font-semibold hover:underline"
+            className="lg:text-lg md:text-md text-[12px] font-semibold hover:underline"
           >
             ainamitantso@gmail.com
           </a>
