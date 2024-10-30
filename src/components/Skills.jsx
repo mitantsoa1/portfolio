@@ -28,8 +28,8 @@ const Skills = () => {
       ],
     },
     { name: "Docker", icon: <Container className="w-6 h-6" />, level: 45 },
-    { name: "Git", icon: <FileCode2 className="w-6 h-6" />, level: 75 },
-    { name: "HTML/CSS", icon: <FileCode2 className="w-6 h-6" />, level: 90 },
+    { name: "Git", icon: <FileCode2 className="w-6 h-6" />, level: 70 },
+    { name: "HTML/CSS", icon: <FileCode2 className="w-6 h-6" />, level: 85 },
   ];
 
   return (
@@ -58,7 +58,7 @@ const Skills = () => {
                 </div>
               ))
             ) : (
-              <div className="w-full h-2 mt-2 rounded bg-text">
+              <div className="w-full h-2 mt-2 rounded bg-white">
                 <div
                   className="h-full transition-all duration-300 rounded bg-border"
                   style={{ width: `${skill.level}%` }}
