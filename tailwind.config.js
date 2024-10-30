@@ -31,7 +31,7 @@ export default {
         ...theme("colors"),
       }),
       screens: {
-        xsm: "440px",
+        xsm: "300px",
       },
       // screens: {
       //   "2xsm": "280px",
