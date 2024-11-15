@@ -3,6 +3,12 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
+      title: "Chat Group",
+      description: "Une application chat en temps en temps réel ",
+      technologies: ["Symfony", "React", "MySQL", "Docker", "Git"],
+      link: "https://github.com/mitantsoa1/chat-group",
+    },
+    {
       title: "Cash Point",
       description: "Une application de gestion de Cash point (mobile money) ",
       technologies: ["Symfony", "React", "MySQL", "Docker", "Git"],
@@ -25,7 +31,11 @@ const Projects = () => {
   return (
     <section id="projets" className="my-16">
       <h2 className="mb-4 text-3xl font-bold text-text">Projects</h2>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 card border-y-2">
+      <div
+        className={`grid grid-cols-1 gap-6 md:grid-cols-2 ${
+          projects.length % 2 == 0 ? "lg:grid-cols-2" : "lg:grid-cols-3"
+        } card border-y-2`}
+      >
         {projects.map((project, index) => (
           <a
             title="Repo dans github"
@@ -40,7 +50,7 @@ const Projects = () => {
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="px-2 py-1 mb-2 mr-2 text-sm rounded-full bg-tech text-white"
+                  className="px-2 py-1 mb-2 mr-2 text-sm text-white rounded-full bg-tech"
                 >
                   {tech}
                 </span>
