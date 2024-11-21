@@ -33,9 +33,6 @@ export default {
       screens: {
         xsm: "300px",
       },
-      // screens: {
-      //   "2xsm": "280px",
-      // },
     },
   },
   plugins: [],
