@@ -7,7 +7,7 @@ const About = () => {
     <section id="profil" className="my-16">
       <h2 className="mb-4 text-3xl font-bold text-text">Profil</h2>
       <div className="p-6 border-l-8 card xsm:p-2">
-        <p className="mb-4 text-lg text-text leading-10">
+        <p className="mb-4 text-lg leading-10 text-text">
           Bonjour 👋, Je suis un <span className="effect-3d">développeur</span>{" "}
           web junior passionné par la technologie et l'innovation. Je suis
           motivé par l'envie d'apprendre en continu et de maîtriser de nouvelles{" "}
@@ -33,7 +33,7 @@ const About = () => {
               <strong className="text-text">Stagiaire en Informatique</strong> -
               CEFOR <br />
               <span className="text-sm text-secondary">
-                Mars 2021 - Oct. 2023
+                Mars 2021 - Oct. 2021
               </span>
             </li>
             <li>
