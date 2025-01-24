@@ -3,24 +3,29 @@ import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 function Socials() {
   return (
-    <div className="flex items-center space-x-3 text-sm text-gray-200  md:flex md:items-center md:space-x-3 sm:grid sm:grid-cols-2 sm:gap-2 sm:w-auto sm:justify-between sm:items-start xsm:text-xs xsm:grid xsm:grid-cols-2 xsm:gap-2 xsm:w-auto xsm:justify-between xsm:items-start">
-      <span className="inline-flex items-center p-2 rounded-2xl bg-social w-auto xsm:px-1 xsm:py-3 sm:px-2 sm:py-3">
-        <Mail className="inline-block w-6 h-6 mr-2 xsm:hidden sm:block" />
-        <span className="inline-block text-[9px] lg:text-sm md:text-sm sm:text-sm  ">
-          ainamitantso@gmail.com
-        </span>
+    <div className="grid grid-cols-1 gap-2 text-sm text-gray-200 sm:grid-cols-2 sm:gap-3 md:flex md:justify-between md:gap-4">
+      {/* Email */}
+      <span className="flex items-center p-2 space-x-2 rounded-lg bg-social md:w-auto">
+        <Mail className="w-5 h-5" />
+        <span className="text-xs sm:text-sm">ainamitantso@gmail.com</span>
       </span>
-      <span className="inline-flex items-center p-2 rounded-2xl bg-social">
-        <Phone className="inline-block w-6 h-6 mr-2" />
-        <span className="inline-block">+261 34 62 115 20</span>
+
+      {/* Phone */}
+      <span className="flex items-center p-2 space-x-2 rounded-lg bg-social md:w-auto">
+        <Phone className="w-5 h-5" />
+        <span className="text-xs sm:text-sm">+261 34 62 115 20</span>
       </span>
-      <span className="inline-flex items-center p-2 rounded-2xl bg-social">
-        <Github className="inline-block w-6 h-6 mr-2" />
-        <span className="inline-block">mitantsoa1</span>
+
+      {/* GitHub */}
+      <span className="flex items-center p-2 space-x-2 rounded-lg bg-social md:w-auto">
+        <Github className="w-5 h-5" />
+        <span className="text-xs sm:text-sm">mitantsoa1</span>
       </span>
-      <span className="inline-flex items-center p-2 xsm:py-1 rounded-2xl bg-social">
-        <Linkedin className="inline-block w-6 h-6 mr-2" />
-        <span className="inline-block">mitantsoa rakotomalala</span>
+
+      {/* LinkedIn */}
+      <span className="flex items-center p-2 space-x-2 rounded-lg bg-social md:w-auto">
+        <Linkedin className="w-5 h-5" />
+        <span className="text-xs sm:text-sm">mitantsoa rakotomalala</span>
       </span>
     </div>
   );

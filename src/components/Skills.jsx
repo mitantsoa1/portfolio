@@ -39,7 +39,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col p-5 mb-5 border-l-4 rounded-lg shadow-md bg-ternary border-border"
+            className="flex flex-col px-2 py-5 mb-5 border-l-4 rounded-lg shadow-md lg:px-5 md:px-5 sm:px-3 bg-ternary border-border"
           >
             <div className="flex items-center">
               <span className="text-text">{skill.icon}</span>
@@ -58,7 +58,7 @@ const Skills = () => {
                 </div>
               ))
             ) : (
-              <div className="w-full h-2 mt-2 rounded bg-white">
+              <div className="w-full h-2 mt-2 bg-white rounded">
                 <div
                   className="h-full transition-all duration-300 rounded bg-border"
                   style={{ width: `${skill.level}%` }}

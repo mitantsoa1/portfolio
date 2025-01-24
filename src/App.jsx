@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  FileCode2,
-  Database,
-  Container,
-} from "lucide-react";
+
 import Headers from "./components/Headers";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -35,7 +28,7 @@ function App() {
   return (
     <div className="min-h-screen transition-colors duration-300 bg-background text-text ">
       <Headers darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="container px-2 py-4 mx-auto lg:px-24 md:px-16 sm:px-8 ">
+      <main className="px-4 py-4 mx-auto lg:px-24 md:px-16 sm:px-4">
         <About />
         <Skills />
         <Projects />
