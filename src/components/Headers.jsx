@@ -53,19 +53,20 @@ const Headers = ({ darkMode, toggleDarkMode }) => {
           : "bg-opacity-80 shadow-[-1px_3px_13px_10px_#1a202c]"
       }`}
     >
-      <div className="container flex items-center justify-between px-1 lg:px-4 md:px-4  mx-auto">
-        <h1 className="font-bold lg:text-2xl md:text-2xl sm:text-xl text-text w-1/3">
-          {isScrolled ? "Hanja" : "Mitantsoa Hanja"}
-        </h1>
-
+      <div className="flex items-center justify-between px-1 mx-auto lg:px-4 md:px-4">
         {/* Bouton pour afficher/masquer la sidebar */}
-        <button
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="sm:block md:hidden lg:hidden p-2 transition-colors duration-300 rounded-full text-text"
-        >
-          {isSidebarOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <div className="flex items-center justify-center">
+          <button
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            className="p-2 transition-colors duration-300 rounded-full sm:block md:hidden lg:hidden text-text"
+          >
+            {isSidebarOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
 
+          <h1 className="font-bold lg:text-2xl md:text-2xl md:ml-8 lg:ml-8 sm:text-xl text-text">
+            {isScrolled ? "Hanja" : "Mitantsoa Hanja"}
+          </h1>
+        </div>
         {/* Navigation pour les écrans md et plus */}
         <nav className="hidden md:block">
           <ul className="flex space-x-10">
@@ -90,7 +91,7 @@ const Headers = ({ darkMode, toggleDarkMode }) => {
         {/* Bouton pour le mode sombre/clair */}
         <button
           onClick={toggleDarkMode}
-          className="p-2 transition-colors duration-300 rounded-full border-text border-2 text-text hover:bg-secondary"
+          className="p-2 transition-colors duration-300 border-2 rounded-full border-text text-text hover:bg-secondary"
           aria-label={
             darkMode ? "Activer le mode clair" : "Activer le mode sombre"
           }
@@ -107,7 +108,7 @@ const Headers = ({ darkMode, toggleDarkMode }) => {
           <div className="p-4 ">
             <button
               onClick={() => setIsSidebarOpen(false)}
-              className="absolute top-4 right-4 p-2"
+              className="absolute p-2 top-4 right-4"
             >
               <X size={24} />
             </button>
